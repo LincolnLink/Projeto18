@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Projeto.Entidades.Tipos
 {
+    /// <summary>
+    /// Enum com os seus valores
+    /// </summary>
     public enum Funcao
     {
         Gerente,
