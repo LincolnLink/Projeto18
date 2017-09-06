@@ -16,13 +16,13 @@ namespace Projeto.DAL
         protected SqlTransaction tr;
 
 
-        protected void OpenConnect()
+        protected void OpenConnection()
         {
             con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\COTI informatica\GitHub 18\Projeto.WEB\App_Data\Banco.mdf;Integrated Security=True");
             con.Open();
         }
 
-        protected void CloseConnect()
+        protected void CloseConnection()
         {
             con.Close();
         }
