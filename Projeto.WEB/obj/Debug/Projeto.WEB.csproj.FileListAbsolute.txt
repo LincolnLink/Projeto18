@@ -3,6 +3,7 @@ D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.WEB.dll
 D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.WEB.pdb
 D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.csprojResolveAssemblyReference.cache
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.csproj.CoreCompileInputs.cache
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.dll
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.pdb
