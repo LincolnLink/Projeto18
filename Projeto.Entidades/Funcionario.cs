@@ -15,7 +15,7 @@ namespace Projeto.Entidades
         private int idFuncionario;
         private string nomeFuncionario;
         private Funcao funcao; //Enum
-        private List<Projeto> projetos;
+        private List<Projetos> projetos;
         /// <summary>
         /// Métodos contrutores
         /// </summary>
@@ -48,7 +48,7 @@ namespace Projeto.Entidades
             set { funcao = value; }
             get { return funcao;  }
         }
-        public List<Projeto> Projetos
+        public List<Projetos> Projetos
         {
             set { projetos = value; }
             get { return projetos;  }

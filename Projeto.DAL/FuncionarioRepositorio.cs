@@ -42,10 +42,6 @@ namespace Projeto.DAL
             return lista;
         }
         #endregion
-
-
-        #region Inserindo
-
-        #endregion
+        
     }
 }

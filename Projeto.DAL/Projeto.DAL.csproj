@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Conexao.cs" />
     <Compile Include="FuncionarioRepositorio.cs" />
+    <Compile Include="ProjetoRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
