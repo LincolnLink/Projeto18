@@ -7,3 +7,9 @@ D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.csprojResolveAss
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.csproj.CoreCompileInputs.cache
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.dll
 D:\COTI informatica\GitHub 18\Projeto.WEB\obj\Debug\Projeto.WEB.pdb
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.BLL.dll
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.DAL.dll
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.Entidades.dll
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.BLL.pdb
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.DAL.pdb
+D:\COTI informatica\GitHub 18\Projeto.WEB\bin\Projeto.Entidades.pdb

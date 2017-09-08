@@ -13,7 +13,7 @@ namespace Projeto.BLL
         ///Criando um método para gravar Projeto e relacionamento
         ///com funcionarios do mesmo projeto
         ///</summary>
-        public void Cadastrar(Projeto p, List<Funcionario> funcionarios)
+        public void Cadastrar(Projetos p, List<Funcionario> funcionarios)
         {
 
         }
