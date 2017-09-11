@@ -6,11 +6,15 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Lincoln Projeto 18</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.min.css" rel="stylesheet" />
 </head>
-<body>
-    <form id="form1" runat="server">
+<body class=" container">
+    <h4>Sistema de controle de Projetos</h4>
+    <hr />
+    <form id="form1" runat="server">        
         <div>
-            <h4>Home</h4>
+            <a href="/Pages/ProjetoCadastro.aspx">Cadastrar novo Projeto</a>
         </div>
     </form>
 </body>
