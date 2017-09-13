@@ -27,7 +27,7 @@ namespace Projeto.DAL
                 string queryProjeto = "INSERT INTO Projeto(Nome, @DataInicio, DataFim) " +
                     " VALUES(@Nome, @DataIncio, @DataFim) " +
                     " SELECT SCOPE_IDENTITY() ";
-                cmd = new SqlCommand(queryProjeto, con);
+                cmd = new SqlCommand(queryProjeto, con, tr);
                 cmd.Parameters.AddWithValue("@NomeProjeto", p.NomeProjeto);
                 cmd.Parameters.AddWithValue("@DataInicio", p.DataInicio);
                 cmd.Parameters.AddWithValue("@DataFim", p.DataFim);
@@ -39,7 +39,7 @@ namespace Projeto.DAL
                 //varrer os funcionarios contidos no projeto..
                 foreach (Funcionario f in p.Funcionarios)
                 {
-                    cmd = new SqlCommand(queryProjetoFuncionario, con);
+                    cmd = new SqlCommand(queryProjetoFuncionario, con, tr);
                     cmd.Parameters.AddWithValue("@IdProjeto", p.IdProjeto);
                     cmd.Parameters.AddWithValue("@IdProjeto", f.IdFuncionario);
                     cmd.ExecuteNonQuery();

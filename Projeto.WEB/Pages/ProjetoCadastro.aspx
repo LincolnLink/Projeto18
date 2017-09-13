@@ -31,19 +31,17 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-
                 <asp:GridView runat="server" ID="GridFuncionario"
                     CssClass="table table-hover" AutoGenerateColumns="false" GridLines="None">
                     <Columns>
                         <asp:TemplateField>
                             <ItemTemplate>
-                                <asp:CheckBox ID="chkFunciorio" runat="server" />
+                                <!--Campo para checkBox para a seleção-->
+                            <asp:CheckBox ID="chkFunciorio" runat="server" />
 
-                                <!-- armazenar o id do funcionario (oculto) -->
-                                <asp:Label ID="lblCodigo" runat="server" 
-                                    Text='<%# Eval("IdFuncionario") %>' 
-                                    Visible="false" />
-
+                                <!--Armazenar o id do funcionario (oculto) -->
+                            <asp:Label ID="lblCodigo" runat="server" 
+                                Text='<%# Eval("IdFuncionario") %>' Visible="false" />
                             </ItemTemplate>
                         </asp:TemplateField>
 
@@ -64,7 +62,7 @@
 
                 <asp:Button runat="server" ID="BtnCadastro" 
                     Text="Cadastrar Projeto" CssClass="btn btn-success"
-                    OnClick="btnCadastro_Click"/>
+                    OnClick="BtnCadastro_Click"/>
                 <br />
                 <br />
                 <asp:Label ID="lblMensagem" runat="server" />
