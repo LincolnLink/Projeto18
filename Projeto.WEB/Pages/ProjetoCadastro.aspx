@@ -37,7 +37,7 @@
                         <asp:TemplateField>
                             <ItemTemplate>
                                 <!--Campo para checkBox para a seleção-->
-                            <asp:CheckBox ID="chkFunciorio" runat="server" />
+                            <asp:CheckBox ID="chkFuncionario" runat="server" />
 
                                 <!--Armazenar o id do funcionario (oculto) -->
                             <asp:Label ID="lblCodigo" runat="server" 

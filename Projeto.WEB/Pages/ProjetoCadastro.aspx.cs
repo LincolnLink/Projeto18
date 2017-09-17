@@ -14,7 +14,7 @@ namespace Projeto.WEB.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
             //Verifica se a pagina esta sendo carregada pela primeira vez
-            if (! IsPostBack)
+            if ( ! IsPostBack)
             {
                 try
                 {
@@ -40,13 +40,13 @@ namespace Projeto.WEB.Pages
                 List<Funcionario> listaFuncionarios = new List<Funcionario>();
 
                 //percorrer as linhas do gridView
-                foreach ( GridView linha in GridFuncionario.Rows)
+                foreach ( GridViewRow linha in GridFuncionario.Rows)
                 {
                     //Buscar o checkBox contido na linha do grid
-                    CheckBox chkFunciorio = linha.FindControl("chkFunciorio") as CheckBox;
+                    CheckBox chkFuncionario = linha.FindControl("chkFuncionario") as CheckBox;
 
                     //Verificar se o checkBox esta marcado..
-                    if (chkFunciorio.Checked)
+                    if (chkFuncionario.Checked)
                     {
                         //capturar a label que contem o id do funcionario..
                         Label lblCodigo = linha.FindControl("lblCodigo") as Label;
@@ -61,16 +61,16 @@ namespace Projeto.WEB.Pages
                 }
 
                 //gravar o projeto
-                Projetos p = new Projetos();
+                EntidadeProjeto p = new EntidadeProjeto();
                 p.NomeProjeto = txtNomeProjeto.Text;
                 p.DataInicio = DateTime.Parse(txtDataInicio.Text);
                 p.DataFim = DateTime.Parse(txtDataFim.Text);
 
                 ProjetoBusiness business = new ProjetoBusiness();
-                business.Cadastrar(p, listaFuncionarios);
-
+                business.Cadastrar( p, listaFuncionarios);
+                
                 //mensagem de sucesso..
-                lblMensagem.Text = "Projeto " + p.NomeProjeto + ", cadastrado com sucesso.";
+                lblMensagem.Text = "Projeto " + p.NomeProjeto + " , cadastrado com sucesso.";
 
                 LimparCampos();
 

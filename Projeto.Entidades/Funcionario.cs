@@ -15,7 +15,7 @@ namespace Projeto.Entidades
         private int idFuncionario;
         private string nomeFuncionario;
         private Funcao funcao; //Enum
-        private List<Projetos> projetos;
+        private List<EntidadeProjeto> projetos;
         /// <summary>
         /// Métodos contrutores
         /// </summary>
@@ -48,7 +48,7 @@ namespace Projeto.Entidades
             set { funcao = value; }
             get { return funcao;  }
         }
-        public List<Projetos> Projetos
+        public List<EntidadeProjeto> Projetos
         {
             set { projetos = value; }
             get { return projetos;  }
@@ -60,7 +60,8 @@ namespace Projeto.Entidades
         public override string ToString()
         {
             return "ID do Funcionario: " + idFuncionario +
-                "Nome do Funcionario: " + nomeFuncionario;
+                "Nome do Funcionario: " + nomeFuncionario +
+                "Função: " + funcao;
         }
     }
 }

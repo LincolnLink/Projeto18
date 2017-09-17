@@ -17,7 +17,7 @@ namespace Projeto.DAL
         {
             OpenConnection();
 
-            string query = "select * from Funcionario";
+            string query = " select * from Funcionario ";
 
             cmd = new SqlCommand(query, con);
             dr = cmd.ExecuteReader();
@@ -37,11 +37,31 @@ namespace Projeto.DAL
 
                 lista.Add(f);
             }
-
             CloseConnection();
             return lista;
         }
         #endregion
-        
+
+
+
+        #region ConsultarFuncao
+
+        public int HastFuncaoGerente(int IdFuncionario)
+        {
+            OpenConnection();
+
+            string query = " SELECT count(Funcao) FROM Funcionario " +
+                " where IdFuncionario = @IdFuncionario and Funcao = 'Gerente' ";
+
+            cmd = new SqlCommand(query, con);
+            cmd.Parameters.AddWithValue("@IdFuncionario", IdFuncionario);            
+            
+            int x = Convert.ToInt32(cmd.ExecuteScalar());
+
+            CloseConnection();
+
+            return x;           
+        }
+        #endregion
     }
 }
